@@ -93,7 +93,7 @@ export default {
                 ));
             },
             download: () => {
-                const dataURL = this.toDataURL();
+                const dataURL = document.querySelector('.upper-canvas').toDataURL();
                 let imageName = this.getImageName();
                 let blob, type, w;
 

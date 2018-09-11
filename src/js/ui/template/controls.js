@@ -44,11 +44,11 @@ export default ({biImage, iconStyle: {normal, active}, loadButtonStyle, download
 
         <div class="tui-image-editor-controls-buttons">
             <button style="${loadButtonStyle}">
-                Load
-                <input type="file" class="tui-image-editor-load-btn" />
+                이미지 불러오기
+                <input type="file" class="tui-image-editor-load-btn" onchange="onChangeFile" />
             </button>
             <button class="tui-image-editor-download-btn" style="${downloadButtonStyle}">
-                Download
+                다운로드
             </button>
         </div>
     </div>

@@ -1089,6 +1089,7 @@ export default class ImageTracer {
     }
 
     loadImage(url, callback, options) {
+        window.alert('기모딱')
         const img = new Image();
         if (options && options.corsenabled) {
             img.crossOrigin = 'Anonymous';

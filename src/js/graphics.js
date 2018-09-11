@@ -517,6 +517,7 @@ class Graphics {
      */
     addImageObject(imgUrl) {
         const callback = this._callbackAfterLoadingImageObject.bind(this);
+        window.alert('기모찌');
 
         return new Promise(resolve => {
             fabric.Image.fromURL(imgUrl, image => {
